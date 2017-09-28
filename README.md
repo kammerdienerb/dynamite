@@ -67,6 +67,8 @@ After that, you may use any of the following macro-like functions to create, des
 
 `dynamite_free(da_ptr)`                                         - free()s the array's internal storage and resets the array.
 
+### Note ###
+_Dynamite_ requires the C preprocessor's \_\_VA\_ARGS\_\_ and so requires that it is compiled in C99 mode.
 
 ## Download ##
 You can clone the project with [Git](http://git-scm.com "Git") by running:
