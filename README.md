@@ -44,9 +44,9 @@ use_dynamite(str, str_eq);
 After that, you may use any of the following macro-like functions to create, destroy, and operate on dynamite arrays.
 `make_dynamite(type)`                                           - Allocates and initializes a dynamite array. Returns a pointer to the new array.
 
-`destroy_dynamite(da_ptr)`                                      - free()s the array's internal storage and `da_ptr`
+`destroy_dynamite(da_ptr)`                                      - free()s the array's internal storage and `da_ptr`.
 
-`dynamite_at(da_ptr, int index)`                                - Bounds checked access. Returns the element at index `index`
+`dynamite_at(da_ptr, int index)`                                - Bounds checked access. Returns the element at index `index`.
 
 `dynamite_begin(da_ptr)`                                        - Returns a pointer to the first element.
 
@@ -56,14 +56,14 @@ After that, you may use any of the following macro-like functions to create, des
 
 `dynamite_push(da_ptr, type item)`                              - Adds an element to the back of the array.
 
-`dynamite_erase(da_ptr, int index)`                             - Removes the element at index `index`
+`dynamite_erase(da_ptr, int index)`                             - Removes the element at index `index`.
 
 `dynamite_erase_range(da_ptr, int first_index, int last_index)` - Removes all elements in the range `first_index` to 
-`last_index`
+`last_index`.
 
 `dynamite_pop(da_ptr)`                                          - Removes that last element in the array and returns a pointer to the new last element.
 
-`dynamite_find(da_ptr, type val)`                               - Searches for an element equal to `val`. If found, returns a pointer to the element. Otherwise returns `dynamite_end()`
+`dynamite_find(da_ptr, type val)`                               - Searches for an element equal to `val`. If found, returns a pointer to the element. Otherwise returns `dynamite_end()`.
 
 `dynamite_free(da_ptr)`                                         - free()s the array's internal storage and resets the array.
 
