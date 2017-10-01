@@ -59,7 +59,6 @@
     typedef struct {                                                           \
         unsigned int chunk_size;                                               \
         unsigned int size;                                                     \
-        unsigned int pop_count;                                                \
         unsigned int used;                                                     \
         type * data;                                                           \
                                                                                \
@@ -245,7 +244,6 @@
     typedef struct {                                                           \
         unsigned int chunk_size;                                               \
         unsigned int size;                                                     \
-        unsigned int pop_count;                                                \
         unsigned int used;                                                     \
         type * data;                                                           \
                                                                                \
@@ -430,7 +428,6 @@
     ((dynamite(type)){                                                         \
         8,                                                                     \
         8,                                                                     \
-        8,                                                                     \
         0,                                                                     \
         (type *)malloc(8 * sizeof(type)),                                      \
                                                                                \
@@ -448,7 +445,6 @@
 
 #define init_dynamite_2(type, c_size)                                          \
     ((dynamite(type)){                                                         \
-        c_size,                                                                \
         c_size,                                                                \
         c_size,                                                                \
         0,                                                                     \
